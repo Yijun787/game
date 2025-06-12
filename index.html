@@ -109,15 +109,15 @@
                 this.mouse = { x: 0, y: 0 };
                 this.isLocked = false;
                 
-                // Player physics
+                // Player physics - 速度都增加一倍
                 this.velocity = new THREE.Vector3();
                 this.canJump = false;
                 this.playerHeight = 1.8;
                 this.jumpVelocity = 0;
                 this.gravity = -30;
-                this.walkSpeed = 15;
-                this.runSpeed = 22;
-                this.slideSpeed = 35;
+                this.walkSpeed = 30;      // 從 15 增加到 30
+                this.runSpeed = 44;       // 從 22 增加到 44
+                this.slideSpeed = 70;     // 從 35 增加到 70
                 this.isSliding = false;
                 this.slideTime = 0;
                 this.slideDuration = 1.0;
